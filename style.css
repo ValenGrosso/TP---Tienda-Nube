@@ -1,0 +1,236 @@
+/* Primera parte */
+/* El "*" es el selector universal y afecta a todos los elementos de la página */
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: rgb(0, 87, 184);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header-bar{
+    display:flex;
+    align-items:center;         
+    justify-content:space-between;
+    padding: 30px;
+}
+
+#logo {
+    width: 160px;
+}
+
+.container{
+    margin-left: 95px; 
+    margin-right: 100px;       
+    padding: 22px;    
+}
+
+.hero-primary {
+    background-color: rgb(0, 87, 184);
+    min-height: 96vh;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hero-grid{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    display: inline-block;
+}
+
+.hero-media {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img {
+    width: 650px;
+}
+
+.btn {
+    background-color: rgb(0, 87, 184);
+    color: #fff;
+    padding: 12px;
+    text-decoration: none;
+    border: none;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: rgb(0, 87, 184);
+    border: 2px solid rgb(0, 87, 184);
+    border-radius: 9999px;
+}
+
+.btn-pill {
+    border-radius: 9999px;
+    width: 210px;
+}
+
+.btn-light {
+    background-color: #fff;
+    color: rgb(0, 87, 184);
+    font-weight: 550;
+    width: 200px;
+    display: block;
+    text-align: center;
+}
+
+/* .btn-light:hover {
+    background-color: rgb(0, 87, 184);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 9999px;
+} */
+
+h1 {
+    font-weight: 500;
+    font-size: 45px;
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+.lead {
+    font-size: 20px;
+    margin-bottom: 25px;
+    width: 500px;
+}
+
+.email-form {
+    background-color: #fff;
+    padding: 6px;
+    width: 525px;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#email {
+    margin-left: 15px;
+    width: 300px;
+    border: none;
+    font-size: medium;
+    color: #ffffff;
+}
+
+.btn-primary {
+    font-size: medium;
+    width: 185px;
+    padding: 14px;
+    font-weight: 500;
+}
+
+.note {
+    font-size: 15px;
+}
+
+/* Segunda parte */
+.features-grid {
+    margin-left: 40px; 
+    margin-right: 40px;       
+    padding: 25px;
+    align-items: stretch;
+}     
+
+.features-section {
+    min-height: 100vh;
+}
+
+.feature-card {
+    flex-basis: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 15px;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+    border: 1.5px solid #c0cce2;                   
+    border-radius: 16px;
+    padding: 35px;
+}
+
+.section-title {
+    font-size: 50px;
+    margin: 0 auto 2rem;
+    width: 900px;
+    text-align: center;
+    color: rgb(73, 73, 73);
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+#container-cards {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.feature-card-title {
+    font-size: 26px;
+    font-weight: 550;
+    color: rgb(73, 73, 73);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.feature-card-text {
+    font-size: 17px;
+    color: rgb(73, 73, 73);
+    font-weight: 100; 
+}
+
+
+
+/* Tercera parte */
+.plan-title {
+    font-size: 45px;
+    font-weight: 549;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 110px;
+    color: rgb(56, 56, 56);
+}
+
+.plan-image img {
+    width: 520px;
+    height: auto;
+}
+
+.plan-grid {
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto; 
+}
+
+.plan-details {
+    width: 450px;
+    color: rgb(56, 56, 56);
+}
+
+.plan-subtitle {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 8px 0 24px;
+}
+
+.plan-item {
+    margin: 0 0 28px;
+    font-size: 20px;
+    list-style: none;
+}
+
