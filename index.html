@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Tienda Nube </title>
     <link rel="stylesheet" href="style.css">
+    <script> src="script.js" </script>
 </head>
 
 <body>
@@ -18,6 +19,7 @@
     </header>
 
     <main>
+        <!-- Primera parte -->
         <section class="hero-primary">
             <div class="container hero-grid">
                 <!-- Columna izquierda -->
@@ -40,6 +42,7 @@
             </div>
         </section>
         
+        <!-- Segunda parte -->
         <section class="features-section">
             <div class="container features-grid">
                 <h2 class="section-title"> Una tienda online gratis con todo lo que necesitás </h2>
@@ -82,6 +85,7 @@
             </div>
         </section>
 
+        <!-- Tercera parte -->
         <section class="plan-section">
             <h2 class="plan-title"> 100% gratis para siempre </h2>
 
@@ -106,26 +110,39 @@
             </div>
         </section>
 
+        <!-- Cuarta parte -->
         <section class="testimonials-section">
             <div class="container testimonials-grid">
                 <!-- Columna izquierda -->
                 <div class="testimonials-intro">
                     <h2 class="testimonials-title"> Conocé algunas de nuestras historias inspiradoras </h2>
-                </div>
 
+                    <div class="controls">
+                        <button> ← </button>
+                        <button> → </button>
+                    </div>
+                </div>
+            
                 <!-- Columna derecha -->
-                <div class="testimonial-card">
-                    <img src="Imagenes/comillas.png" alt="" class="testimonial-icon">
-                    <p class="testimonial-text"> Me ayudaron a seguir apostando al arte en el peor de los escenarios: un artista callejero que no podía salir a la calle. Hoy, 1 año después, sigo llegando a un montón de gente gracias a mi Tiendanube. </p>
-                    <p class="testimonial-author"> Tano Verón </p>
-                    <a href="tanov.html" class="testimonial-link"> @tanoveron </a>
+                <div class="testimonials-card">
+                    <div class="track" id="track">
+                        <article class="slide">
+                            <img src="Imagenes/comillas.png" alt="" class="testimonial-icon">
+                            <p class="testimonial-text"> Me ayudaron a seguir apostando al arte en el peor de los escenarios: un artista callejero que no podía salir a la calle. Hoy, 1 año después, sigo llegando a un montón de gente gracias a mi Tiendanube. </p>
+                            <p class="testimonial-author"> Tano Verón </p>
+                            <a href="tanov.html" class="testimonial-link"> @tanoveron </a>
+                        </article>
+                    </div>  
                 </div>
             </div>
         </section>
 
+        <!-- Quinta parte -->
         <section class="resources-section">
             <div class="container resources-grid">
-                <div class="resources-grid">
+                <h2 class="resource-section-title"> ¡Te acompañamos a potenciar tu negocio! </h2>
+
+                <div id="container-cards">
                     <article class="resource-card">
                         <p class="resource-category"> Desarrollá canales de venta </p>
                         <h3 class="resource-title"> Conocé todo sobre cómo hacer publicidad en Instagram </h3>
@@ -147,6 +164,7 @@
             </div>
         </section>
 
+        <!-- Sexta parte -->
         <section class="cta-section">
             <div class="container cta-grid">
                 <!-- Columna izquierda -->
@@ -163,37 +181,141 @@
             </div>
         </section>
 
+        <!-- Séptima parte -->
         <section class="faq-section">
             <div class="container faq-grid">
                 <!-- Columna izquierda -->
                 <div class="faq-content">
-                    <h2 class="faq-title"> Preguntas frecuentes sobre el Plan Inicial </h2>
+                    <h2 class="faq-title">Preguntas frecuentes sobre el Plan Inicial</h2>
                 </div>
 
                 <!-- Columna derecha -->
                 <div class="faq-media">
-                    <ul class="faq-list">
-                        <li class="faq-item"> ¿Cómo crear una tienda online gratis? </li>
-                        <li class="faq-item"> ¿Por qué elegir el Plan Inicial? </li>
-                        <li class="faq-item"> ¿Por cuánto tiempo puedo tener la tienda online gratis? </li>
-                        <li class="faq-item"> ¿Cuál es la diferencia entre una tienda online gratis y una con un plan pago? </li>
-                        <li class="faq-item"> ¿Puedo integrar aplicaciones a mi tienda online gratis? </li>
-                        <li class="faq-item"> ¿Puedo cambiar a un plan pago después de probar el Plan Inicial? </li>
-                    </ul>
+                    <!-- <details>: cajita que puedo abrir/cerrar para mostrar u ocultar info sin usar JS. -->
+                    <details class="faq-qa">
+                        <!-- <summary>: el título que clickeo para abrir/cerrar la cajita (<details>). -->
+                        <summary>
+                            ¿Cómo crear una tienda online gratis?
+                            <!-- <span>: un envoltorio en línea para darle estilo o separar un pedacito de texto/ícono. -->
+                            <span class="chev" aria-hidden="true"></span>
+                        </summary>
+
+                        <div class="faq-panel">
+                            <p> Este plan es la opción ideal para quienes están comenzando su negocio desde cero y quieren ahorrar costos, como también para los negocios que ya venden por redes sociales y quieren su propia tienda online gratis. </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-qa" open>
+                        <summary>
+                            ¿Por qué elegir el Plan Inicial?
+                            <span class="chev" aria-hidden="true"></span>
+                        </summary>
+
+                        <div class="faq-panel">
+                            <p> Con el Plan Inicial tu tienda online es gratis para siempre. No pagás mensualidad, tampoco pagás comisión usando Pago Nube para cobrar tus ventas. No tiene límite de tiempo. Cuando tu negocio crezca, ¡podés elegir uno de nuestros planes pagos! </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-qa">
+                        <summary>
+                            ¿Por cuánto tiempo puedo tener la tienda online gratis?
+                            <span class="chev" aria-hidden="true"></span>
+                        </summary>
+
+                        <div class="faq-panel">
+                            <p> Los planes pagos tienen funcionalidades más avanzadas en el área de estadísticas, soporte, plantillas de diseño disponibles y acciones masivas. La diferencia más notable es que con el Plan Inicial solo podés usar Andreani como método de envío y Pago Nube como método de pago. </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-qa">
+                        <summary>
+                            ¿Cuál es la diferencia entre una tienda online gratis y una con un plan pago?
+                            <span class="chev" aria-hidden="true"></span>
+                        </summary>
+
+                        <div class="faq-panel">
+                            <p> ¡Sí! Con el Plan Inicial podés integrar aplicaciones o soluciones de gestión de stock, e-mail marketing y mucho más. Descubrí nuestra Tienda de aplicaciones. </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-qa">
+                        <summary>
+                            ¿Puedo integrar aplicaciones a mi tienda online gratis?
+                            <span class="chev" aria-hidden="true"></span>
+                        </summary>
+
+                        <div class="faq-panel">
+                            <p> ¡Sí! Es posible cambiar a cualquiera de nuestros planes pagos de forma fácil e intuitiva desde tu panel administrador. Podés suscribirte o desuscribirte en cualquier momento. Mirá los detalles de cada plan. </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-qa">
+                        <summary>
+                            ¿Puedo cambiar a un plan pago después de probar el Plan Inicial?
+                            <span class="chev" aria-hidden="true"></span>
+                        </summary>
+
+                        <div class="faq-panel">
+                            <p>Podés escalar a un plan pago cuando lo necesites, conservando tu configuración y productos.</p>
+                        </div>
+                    </details>
                 </div>
-            </div> 
+            </div>
         </section>
     </main>
 
     <footer>
-        <div class="container footer-info">
-            <p class="footer-text"> 2011 - 2025 © Tiendanube - Todos los derechos reservados. </p>
-            <a class="footer-link" href="ptc.html"> Políticas, términos y condiciones. </a>
-        </div>
+        <section class="footer-section">
+            <div class="footer-grid">
+                <div class="footer-legal">
+                    <p class="footer-legal-text">
+                        2011 - 2025 © Tiendanube - Todos los derechos reservados.
+                    </p>
+                    <a href="https://www.tiendanube.com/terminos-de-uso" class="politics">Políticas, términos y
+                        condiciones.</a>
+                </div>
+            </div>
+            <div class="footer-social">
+                <ul class="social-list">
+                    <li class="instagram">
+                        <a href="https://www.instagram.com/tiendanube/" target="_blank">
+                            <img loading="lazy" class="social-list-img"
+                                src="https://app-insti-cdn.nuvemshop.com.br/site/dist/images/svgs/social-icons/instagram.svg?v=0c215ea"
+                                alt="Logo instagram" height="24" width="24">
+                        </a>
+                    </li>
+                    <li class="youtube">
+                        <a href="https://www.youtube.com/tiendanube" target="_blank">
+                            <img loading="lazy" class="social-list-img"
+                                src="https://app-insti-cdn.nuvemshop.com.br/site/dist/images/svgs/social-icons/youtube.svg?v=0c215ea"
+                                alt="Logo youtube" height="24" width="24">
+                        </a>
+                    </li>
+                    <li class="X">
+                        <a href="https://twitter.com/tiendanube" target="_blank">
+                            <img loading="lazy" class="social-list-img"
+                                src="https://app-insti-cdn.nuvemshop.com.br/site/dist/images/svgs/social-icons/x.svg?v=0c215ea"
+                                alt="Logo x" height="24" width="24">
+                        </a>
+                    </li>
 
-        <div class="container footer-social">
-
-        </div>
+                    <li class="linkedin">
+                        <a href="https://www.linkedin.com/company/tiendanube/" target="_blank">
+                            <img loading="lazy" class="social-list-img"
+                                src="https://app-insti-cdn.nuvemshop.com.br/site/dist/images/svgs/social-icons/linkedin.svg?v=0c215ea"
+                                alt="Logo linkedin" height="24" width="24">
+                        </a>
+                    </li>
+                    <li class="facebook">
+                        <a href="https://www.facebook.com/TiendaNube/" target="_blank">
+                            <img loading="lazy" class="social-list-img"
+                                src="https://app-insti-cdn.nuvemshop.com.br/site/dist/images/svgs/social-icons/facebook.svg?v=0c215ea"
+                                alt="Logo facebook" height="24" width="24">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
